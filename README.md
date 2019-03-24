@@ -1,2 +1,0 @@
-# pensolds
-Created with CodeSandbox
