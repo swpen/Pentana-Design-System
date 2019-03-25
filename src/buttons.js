@@ -2,6 +2,7 @@ import "./styles.css";
 
 document.getElementById("app").innerHTML = `
 <h1>Buttons</h1>
+<hr>
 <button>Button</button>
 <p></p>
 <button class="primary">Button</button>
