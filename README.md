@@ -1,3 +1,3 @@
-# pensolds
+# Design System for Pentana Solutions 
 Created with CodeSandbox
-Design System for Pentana Solutions
+Github repo: pensolds
