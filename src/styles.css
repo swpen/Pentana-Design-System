@@ -1,17 +1,35 @@
 :root {
-  --brand-color-H: 198;
-  --brand-color-S: 97%;
-  --brand-color-L: 43%;
-  --brand-typography: arial, sans-serif;
-  /* auto calculated */
-  --brand-color: hsl(
-    var(--brand-color-H),
-    var(--brand-color-S),
-    var(--brand-color-L)
+  /* Brand primary color */
+  --brand-color-primary-H: 198;
+  --brand-color-primary-S: 97%;
+  --brand-color-primary-L: 43%;
+  /* Brand secondary color */
+  --brand-color-secondary-H: 31;
+  --brand-color-secondary-S: 87%;
+  --brand-color-secondary-L: 53%;
+  /* Brand typography */
+  --brand-typography: Arial, Helvetica, sans-serif;
+  --brand-typography-numeric: "Lucida Console", Monaco, monospace;
+  /* Breaking down brand colors into their Hue, Saturation, Lightness (HSL) parts */
+  --brand-primary-color: hsl(
+    var(--brand-color-primary-H),
+    var(--brand-color-primary-S),
+    var(--brand-color-primary-L)
   );
-  --brand-color-wcag-dark: hsl(var(--brand-color-H), 85%, 30%);
-  --brand-color-wcag-typography: hsl(var(--brand-color-H), 15%, 15%);
-  --brand-color-body-background: hsl(var(--brand-color-H), 15%, 95%);
+  --brand-secondary-color: hsl(
+    var(--brand-color-secondary-H),
+    var(--brand-color-secondary-S),
+    var(--brand-color-secondary-L)
+  );
+  /* Semantic Colors */
+  --semantic-color-error: hsl(6, 63%, 46%);
+  --semantic-color-success: hsl(147, 85%, 26%);
+  --semantic-color-warning: hsl(34, 100%, 32%);
+  --semantic-color-info: hsl(210, 86%, 43%);
+  /* Converting brand colors into WCAG compliant colors manually by adjusting Saturation and Lightness */
+  --brand-color-wcag-dark: hsl(var(--brand-color-primary-H), 85%, 30%);
+  --brand-color-wcag-typography: hsl(var(--brand-color-primary-H), 15%, 20%);
+  --brand-color-body-background: hsl(var(--brand-color-primary-H), 15%, 95%);
 }
 html {
   font-size: 16px;
@@ -82,8 +100,16 @@ button.secondary {
   border: 1px solid var(--brand-color-wcag-dark);
 }
 button:hover {
-  background-color: hsl(var(--brand-color-H), var(--brand-color-S), 95%);
+  background-color: hsl(
+    var(--brand-color-primary-H),
+    var(--brand-color-primary-S),
+    95%
+  );
 }
 button:hover.primary {
-  background-color: hsl(var(--brand-color-H), var(--brand-color-S), 25%);
+  background-color: hsl(
+    var(--brand-color-primary-H),
+    var(--brand-color-primary-S),
+    25%
+  );
 }
