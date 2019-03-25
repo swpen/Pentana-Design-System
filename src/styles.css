@@ -36,12 +36,12 @@ html {
 }
 body {
   font-family: var(--brand-typography);
-  line-height: 1.25rem;
   background-color: var(--brand-color-body-background);
 }
 * {
   box-sizing: border-box;
   font-size: 1rem;
+  line-height: 1.15;
   color: var(--brand-color-wcag-typography);
   /*margin: 0;
   padding: 0;*/
@@ -68,6 +68,34 @@ h5 {
 }
 h6 {
   font-size: 0.75rem;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+mark {
+  padding: 0.125rem;
+  background-color: yellow;
+}
+small,
+blockquote footer {
+  font-size: 75%;
+  opacity: 0.85;
+}
+blockquote {
+  padding: 0.125rem 0.5rem 1rem 1rem;
+  margin: 0.25rem;
+  border-left: 5px solid var(--brand-secondary-color);
 }
 a,
 button {
@@ -112,4 +140,9 @@ button:hover.primary {
     var(--brand-color-primary-S),
     25%
   );
+}
+/* Form */
+label {
+  opacity: 85%;
+  font-size: 0.875rem;
 }
