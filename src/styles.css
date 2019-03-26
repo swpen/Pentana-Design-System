@@ -24,13 +24,13 @@
   /* Semantic Colors */
   --semantic-color-error: hsl(6, 63%, 46%);
   --semantic-color-success: hsl(147, 85%, 26%);
-  --semantic-color-warning: hsl(34, 100%, 32%);
+  --semantic-color-warning: hsl(25, 97%, 37%);
   --semantic-color-info: hsl(210, 86%, 43%);
   /* Converting brand colors into WCAG compliant colors manually by adjusting Saturation and Lightness */
   --brand-color-wcag-dark: hsl(
     var(--brand-color-primary-H),
     var(--brand-color-primary-S),
-    30%
+    33%
   );
   --brand-color-wcag-typography: hsl(var(--brand-color-primary-H), 15%, 20%);
   --brand-color-body-background: hsl(var(--brand-color-primary-H), 15%, 95%);
