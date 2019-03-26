@@ -24,7 +24,7 @@
   /* Semantic Colors */
   --semantic-color-error: hsl(6, 63%, 46%);
   --semantic-color-success: hsl(147, 85%, 26%);
-  --semantic-color-warning: hsl(25, 97%, 37%);
+  --semantic-color-warning: hsl(30, 96%, 35%);
   --semantic-color-info: hsl(210, 86%, 43%);
   /* Converting brand colors into WCAG compliant colors manually by adjusting Saturation and Lightness */
   --brand-color-wcag-dark: hsl(
