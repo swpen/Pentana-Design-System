@@ -48,7 +48,7 @@
     10%,
     43%
   );
-  --brand-color-body-background: hsl(var(--brand-color-primary-H), 15%, 95%);
+  --brand-color-body-background: hsl(var(--brand-color-primary-H), 30%, 97%);
 }
 html {
   font-size: 16px;
