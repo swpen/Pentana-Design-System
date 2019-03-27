@@ -125,7 +125,7 @@ a {
 }
 button {
   border: none;
-  padding: 0.25rem;
+  padding: 0.425rem;
   background-color: transparent;
 }
 button:disabled {
@@ -134,7 +134,7 @@ button:disabled {
 }
 button.primary,
 button.secondary {
-  padding: 0.75rem;
+  padding: 0.55rem;
   border-radius: 0.125rem;
   text-align: center;
 }
@@ -143,6 +143,7 @@ button.primary {
   color: white;
 }
 button.secondary {
+  padding: 0.488rem;
   background-color: transparent;
   border: 0.0625rem solid var(--brand-color-wcag-dark);
 }
