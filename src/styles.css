@@ -144,7 +144,7 @@ button.primary {
 }
 button.secondary {
   background-color: transparent;
-  border: 1px solid var(--brand-color-wcag-dark);
+  border: 0.0625rem solid var(--brand-color-wcag-dark);
 }
 button:hover {
   background-color: hsl(
