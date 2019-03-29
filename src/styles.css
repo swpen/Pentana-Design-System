@@ -142,17 +142,18 @@ button.primary {
   background-color: var(--brand-color-wcag-dark);
   color: white;
 }
-button.secondary {
+button.secondary,
+button.tertiary {
   padding: 0.488rem;
+  color: var(--brand-color-wcag-dark);
   background-color: transparent;
   border: 0.0625rem solid var(--brand-color-wcag-dark);
 }
+button.tertiary {
+  border: none;
+}
 button:hover {
-  background-color: hsl(
-    var(--brand-color-primary-H),
-    var(--brand-color-primary-S),
-    95%
-  );
+  background-color: hsl(var(--brand-color-primary-H), 50%, 90%);
 }
 button:hover.primary {
   background-color: hsl(

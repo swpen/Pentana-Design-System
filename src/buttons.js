@@ -5,17 +5,23 @@ document.getElementById("app").innerHTML = `
 <hr>
 <button>Button</button>
 <br><br>
-<button class="primary">Button</button>
+<button class="primary">Primary button</button>
 <button class="primary" disabled>Button</button>
 <button class="primary">Loading...</button>
 <button class="primary">&#128465</button>
 <button class="primary">&#128465;Delete</button>
 <br><br>
-<button class="secondary">Button</button>
+<button class="secondary">Secondary button</button>
 <button class="secondary" disabled>Button</button>
 <button class="secondary">Loading...</button>
 <button class="secondary">&#128465</button>
 <button class="secondary">&#128465;Delete</button>
+<br><br>
+<button class="tertiary">Tertiary button</button>
+<button class="tertiary" disabled>Button</button>
+<button class="tertiary">Loading...</button>
+<button class="tertiary">&#128465</button>
+<button class="tertiary">&#128465;Delete</button>
 <br><br>
 <button class="secondary">Split Button</button>
 <br><br>
