@@ -18,4 +18,7 @@ document.getElementById("app").innerHTML = `
 <button class="secondary">&#128465;Delete</button>
 <br><br>
 <button class="secondary">Split Button</button>
+<br><br>
+<a href="http://www.pentanasolutions.com/"
+   title="Pentana Solutions specialises in the development and supply of automotive software tailored to the needs of dealerships.">Pentana Solutions</a>
 `;
