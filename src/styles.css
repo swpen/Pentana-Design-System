@@ -67,7 +67,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: normal;
 }
 h1 {
@@ -79,10 +80,12 @@ h2 {
 h3 {
   font-size: 1.125rem;
 }
-h4 {
+h4,
+legend {
   font-size: 1rem;
 }
-h5 {
+h5,
+label {
   font-size: 0.875rem;
 }
 h6 {
@@ -163,7 +166,33 @@ button:hover.primary {
   );
 }
 /* Form */
+legend,
 label {
-  opacity: 85%;
-  font-size: 0.875rem;
+  color: var(--brand-color-wcag-typography-secondary);
+}
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+/*form.horizontal label {
+  display: inline-block;
+  width: 8rem;
+  text-align: right;
+}*/
+form input {
+  margin-bottom: 0.75rem;
+}
+input,
+textarea {
+  padding: 0.125rem 0.25rem;
+  border: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 60%);
+  background-color: hsl(var(--brand-color-primary-H), 25%, 98%);
+}
+fieldset {
+  border: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+legend {
+  margin: 0 0 0.5rem 0;
 }
