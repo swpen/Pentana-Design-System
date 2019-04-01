@@ -5,7 +5,7 @@ document.getElementById("app").innerHTML = `
 <hr>
 <form action="/my-handling-form-page" method="post">
 <fieldset>
-    <legend>Fruit juice size</legend>
+    <legend>Form section heading</legend>
   <div>
     <label for="name">Name</label>
     <input type="text" id="name" name="user_name">
@@ -22,7 +22,7 @@ document.getElementById("app").innerHTML = `
 </form>
 <form>
 <fieldset>
-    <legend>Fruit juice size</legend>
+    <legend>Form section heading</legend>
     <div class="form-group">
         <label for="short-text-field">Short text field</label>
         <input id="short-text-field" class="form-control" name="name" type="text" value="">

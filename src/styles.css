@@ -170,6 +170,12 @@ legend,
 label {
   color: var(--brand-color-wcag-typography-secondary);
 }
+form legend {
+  border-bottom: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 80%);
+  width: 100%;
+  padding-bottom: 0.25rem;
+  margin: 0 0 0.75rem 0;
+}
 label {
   display: block;
   margin-bottom: 0.25rem;
@@ -184,7 +190,7 @@ form input {
 }
 input,
 textarea {
-  padding: 0.125rem 0.25rem;
+  padding: 0.375rem;
   border: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 60%);
   background-color: hsl(var(--brand-color-primary-H), 25%, 98%);
 }
@@ -192,7 +198,4 @@ fieldset {
   border: none;
   margin: 0 0 1rem 0;
   padding: 0;
-}
-legend {
-  margin: 0 0 0.5rem 0;
 }
