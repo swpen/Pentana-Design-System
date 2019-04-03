@@ -17,24 +17,18 @@ document.getElementById("app").innerHTML = `
   <div>
     <label for="msg">Message</label>
     <textarea id="msg" name="user_message"></textarea>
-  </div>
-  </fieldset>
-</form>
-<form>
+  </div>  
+</fieldset>
 <fieldset>
-    <legend>Form section heading</legend>
-    <div class="form-group">
-        <label for="short-text-field">Short text field</label>
-        <input id="short-text-field" class="form-control" name="name" type="text" value="">
-    </div>
-    <div class="form-group">
-        <label for="short-text-field">Short text field</label>
-        <input id="short-text-field" class="form-control" name="name" type="text" value="">
-    </div>
-    <div class="form-group">
-        <label for="short-text-field">Short text field</label>
-        <input id="short-text-field" class="form-control" name="name" type="text" value="">
-    </div>
-    </fieldset>
+  <legend>Choose your interests</legend>
+  <div>
+    <input type="checkbox" id="coding" name="interest" value="coding" checked>
+    <label for="coding">Coding</label>
+  </div>
+  <div>
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Music</label>
+  </div>
+</fieldset>
 </form>
 `;

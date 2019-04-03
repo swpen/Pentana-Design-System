@@ -27,6 +27,7 @@
   --semantic-color-warning: hsl(30, 96%, 35%);
   --semantic-color-info: hsl(210, 86%, 43%);
   --semantic-color-anchor: hsl(240, 100%, 40%);
+  --color-input: hsl(208, 100%, 41%);
   /* Converting brand colors into WCAG compliant colors manually by adjusting Saturation and Lightness */
   --brand-color-wcag-dark: hsl(
     var(--brand-color-primary-H),
@@ -48,7 +49,7 @@
     10%,
     43%
   );
-  --brand-color-body-background: hsl(var(--brand-color-primary-H), 30%, 97%);
+  --brand-color-body-background: hsl(var(--brand-color-primary-H), 25%, 98%);
 }
 html {
   font-size: 16px;
@@ -192,10 +193,40 @@ input,
 textarea {
   padding: 0.375rem;
   border: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 60%);
-  background-color: hsl(var(--brand-color-primary-H), 25%, 98%);
+  background-color: var(--brand-color-body-background);
+}
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border-color: var(--color-input);
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0.125rem var(--color-input);
+  background-color: white;
 }
 fieldset {
   border: none;
   margin: 0 0 1rem 0;
   padding: 0;
 }
+/* --- Checkbox --- */
+input[type="checkbox"] + label:before {
+  /*content: '\00d7';*/
+  /*content: '\002718';*/
+  /*content: '\002715';*/
+  /*content: '\0025a0';*/
+  content: "\002713";
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.15;
+  color: rgba(0, 0, 255, 0);
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: rgba(0, 0, 255, 1);
+  line-height: 0.75;
+  text-shadow: 0.05em 0 0 rgba(0, 0, 255, 1), -0.05em 0 0 rgba(0, 0, 255, 1);
+}
+/* Radio */
