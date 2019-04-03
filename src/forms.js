@@ -30,5 +30,32 @@ document.getElementById("app").innerHTML = `
     <label for="music">Music</label>
   </div>
 </fieldset>
+<input type="number" min="0" max="1" step="1">
 </form>
+<form action="thanks.html" method="post">
+  <!-- Labels are associated with inputs using the for and id attributes -->
+  <label for="name">Name</label>
+  <input id="name">
+</form>
+<br>
+<h1>Select boxes</h1>
+<hr>
+<label for="province">Province</label>
+<select id="province">
+  <option>Manitoba</option>
+  <option>Ontario</option>
+  <option>Quebec</option>
+</select>
+<br>
+<label for="province">Province or State</label>
+<select id="province">
+  <optgroup label="Canada">
+    <option>Ontario</option>
+    <option>Québec</option>
+  </optgroup>
+  <optgroup label="United States">
+    <option>New York</option>
+    <option>California</option>
+  </optgroup>
+</select>
 `;

@@ -29,11 +29,24 @@
   --semantic-color-anchor: hsl(240, 100%, 40%);
   --color-input: hsl(208, 100%, 41%);
   /* Converting brand colors into WCAG compliant colors manually by adjusting Saturation and Lightness */
-  --brand-color-wcag-dark: hsl(
+  --brand-color-primary-wcag: hsl(
     var(--brand-color-primary-H),
     var(--brand-color-primary-S),
     33%
   );
+  /* make the color darker on hover */
+  --brand-color-primary-wcag-hover: hsl(
+    var(--brand-color-primary-H),
+    var(--brand-color-primary-S),
+    22%
+  );
+  /* make the background color lighter on hover */
+  --brand-color-primary-wcag-hover-bg: hsl(
+    var(--brand-color-primary-H),
+    var(--brand-color-primary-S),
+    96%
+  );
+  /* make the color darker for Typography */
   --brand-color-wcag-typography-primary: hsl(
     var(--brand-color-primary-H),
     15%,
@@ -49,7 +62,8 @@
     10%,
     43%
   );
-  --brand-color-body-background: hsl(var(--brand-color-primary-H), 25%, 98%);
+  /* Body Background color */
+  --brand-color-body-background: hsl(var(--brand-color-primary-H), 20%, 95%);
 }
 html {
   font-size: 16px;
@@ -121,7 +135,8 @@ blockquote {
   border-left: 0.25rem solid var(--brand-secondary-color);
 }
 a,
-button {
+button,
+select {
   cursor: pointer;
 }
 a {
@@ -131,6 +146,9 @@ button {
   border: none;
   padding: 0.425rem;
   background-color: transparent;
+}
+button:hover {
+  background-color: var(--brand-color-primary-wcag-hover-bg);
 }
 button:disabled {
   cursor: not-allowed;
@@ -143,28 +161,26 @@ button.secondary {
   text-align: center;
 }
 button.primary {
-  background-color: var(--brand-color-wcag-dark);
+  background-color: var(--brand-color-primary-wcag);
   color: white;
 }
 button.secondary,
 button.tertiary {
   padding: 0.488rem;
-  color: var(--brand-color-wcag-dark);
+  color: var(--brand-color-primary-wcag);
   background-color: transparent;
-  border: 0.0625rem solid var(--brand-color-wcag-dark);
+  border: 0.0625rem solid var(--brand-color-primary-wcag);
 }
 button.tertiary {
   border: none;
 }
-button:hover {
-  background-color: hsl(var(--brand-color-primary-H), 50%, 90%);
+button.primary:hover {
+  background-color: var(--brand-color-primary-wcag-hover);
 }
-button:hover.primary {
-  background-color: hsl(
-    var(--brand-color-primary-H),
-    var(--brand-color-primary-S),
-    25%
-  );
+button.secondary:hover,
+button.tertiary:hover {
+  color: var(--brand-color-primary-wcag-hover);
+  background-color: var(--brand-color-primary-wcag-hover-bg);
 }
 /* Form */
 legend,
@@ -186,12 +202,11 @@ label {
   width: 8rem;
   text-align: right;
 }*/
-form input {
-  margin-bottom: 0.75rem;
-}
 input,
-textarea {
+textarea,
+select {
   padding: 0.375rem;
+  margin-bottom: 0.75rem;
   border: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 60%);
   background-color: var(--brand-color-body-background);
 }
@@ -230,3 +245,11 @@ input[type="checkbox"]:checked + label:before {
   text-shadow: 0.05em 0 0 rgba(0, 0, 255, 1), -0.05em 0 0 rgba(0, 0, 255, 1);
 }
 /* Radio */
+
+/* Select */
+option {
+  padding: 10rem;
+}
+option:hover {
+  background-color: hotpink;
+}
