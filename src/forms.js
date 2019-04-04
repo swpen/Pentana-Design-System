@@ -32,12 +32,13 @@ document.getElementById("app").innerHTML = `
     <label for="music">Music</label>
   </div>
 </fieldset>
-<input type="number" min="0" max="1" step="1">
+<label for="spinner">Spinner</label>
+<input type="number" id="spinner" min="0" max="1" step="1">
 </form>
 <form action="thanks.html" method="post">
   <!-- Labels are associated with inputs using the for and id attributes -->
-  <label for="name">Name</label>
-  <input id="name">
+  <label for="full-name">Full Name</label>
+  <input id="full-name">
 </form>
 <br>
 <h1>Select boxes</h1>
@@ -49,8 +50,8 @@ document.getElementById("app").innerHTML = `
   <option>Quebec</option>
 </select>
 <br>
-<label for="province">Province or State</label>
-<select id="province">
+<label for="state">State</label>
+<select id="state">
   <optgroup label="Canada">
     <option>Ontario</option>
     <option>Québec</option>
