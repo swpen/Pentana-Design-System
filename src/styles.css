@@ -8,7 +8,7 @@
   --brand-color-secondary-S: 87%;
   --brand-color-secondary-L: 53%;
   /* Brand typography */
-  --brand-typography: Arial, Helvetica, sans-serif;
+  --brand-typography: "Roboto", sans-serif;
   --brand-typography-numeric: "Lucida Console", Monaco, monospace;
   /* Breaking down brand colors into their Hue, Saturation, Lightness (HSL) parts */
   --brand-primary-color: hsl(
@@ -29,16 +29,23 @@
   --semantic-color-anchor: hsl(240, 100%, 40%);
   --color-input: hsl(208, 100%, 41%);
   /* Converting brand colors into WCAG compliant colors manually by adjusting Saturation and Lightness */
+  /* Primary color WCAG */
   --brand-color-primary-wcag: hsl(
     var(--brand-color-primary-H),
     var(--brand-color-primary-S),
     33%
   );
+  /* Secondary  color WCAG */
+  --brand-color-secondary-wcag: hsl(
+    var(--brand-color-secondary-H),
+    var(--brand-color-secondary-S),
+    35%
+  );
   /* make the color darker on hover */
   --brand-color-primary-wcag-hover: hsl(
     var(--brand-color-primary-H),
     var(--brand-color-primary-S),
-    22%
+    25%
   );
   /* make the background color lighter on hover */
   --brand-color-primary-wcag-hover-bg: hsl(
@@ -47,36 +54,32 @@
     96%
   );
   /* make the color darker for Typography */
-  --brand-color-wcag-typography-primary: hsl(
-    var(--brand-color-primary-H),
-    15%,
-    20%
-  );
-  --brand-color-wcag-typography-secondary: hsl(
-    var(--brand-color-primary-H),
-    10%,
-    35%
-  );
-  --brand-color-wcag-typography-tertiary: hsl(
-    var(--brand-color-primary-H),
-    10%,
-    43%
-  );
+  /* Typography primary color for: Headings, paragraph, data */
+  --color-typography-primary: hsl(var(--brand-color-primary-H), 15%, 20%);
+  /* Typography secondary color for: Labels, captions */
+  --color-typography-secondary: hsl(var(--brand-color-primary-H), 15%, 30%);
+  /* Typography tertiary color for: Hints, disclaimers */
+  --color-typography-tertiary: hsl(var(--brand-color-primary-H), 15%, 42%);
   /* Body Background color */
   --brand-color-body-background: hsl(var(--brand-color-primary-H), 20%, 95%);
+  /* Neutral colors */
+  /* Borders for form elements */
+  --neutral-color-01: hsl(var(--brand-color-primary-H), 15%, 60%);
+  /* Neutral Background colors */
+  --neutral-color-bg-01: hsl(var(--brand-color-primary-H), 15%, 97%);
 }
 html {
   font-size: 16px;
 }
 body {
-  font-family: var(--brand-typography);
   background-color: var(--brand-color-body-background);
 }
 * {
   box-sizing: border-box;
   font-size: 1rem;
-  line-height: 1.15;
-  color: var(--brand-color-wcag-typography);
+  /* line-height: 1;*/
+  color: var(--color-typography-primary);
+  font-family: var(--brand-typography);
   /*margin: 0;
   padding: 0;*/
 }
@@ -126,8 +129,8 @@ mark {
 }
 small,
 blockquote footer {
-  font-size: 75%;
-  opacity: 0.85;
+  font-size: 0.75rem;
+  color: var(--color-typography-tertiary);
 }
 blockquote {
   padding: 0.125rem 0.5rem 1rem 1rem;
@@ -185,7 +188,7 @@ button.tertiary:hover {
 /* Form */
 legend,
 label {
-  color: var(--brand-color-wcag-typography-secondary);
+  color: var(--color-typography-secondary);
 }
 form legend {
   border-bottom: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 80%);
@@ -205,10 +208,10 @@ label {
 input,
 textarea,
 select {
-  padding: 0.375rem;
+  padding: 0.25rem;
   margin-bottom: 0.75rem;
-  border: 0.0625rem solid hsl(var(--brand-color-primary-H), 10%, 60%);
-  background-color: var(--brand-color-body-background);
+  border: 0.0625rem solid var(--neutral-color-01);
+  background-color: var(--neutral-color-bg-01);
 }
 input:hover,
 input:focus,

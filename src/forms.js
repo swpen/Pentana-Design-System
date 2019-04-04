@@ -1,6 +1,8 @@
 import "./styles.css";
 
 document.getElementById("app").innerHTML = `
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
+
 <h1>Form</h1>
 <hr>
 <form action="/my-handling-form-page" method="post">

@@ -1,6 +1,8 @@
 import "./styles.css";
 
 document.getElementById("app").innerHTML = `
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
+
 <h1>Buttons</h1>
 <hr>
 <button>Button</button>

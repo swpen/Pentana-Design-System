@@ -1,6 +1,7 @@
 import "./styles.css";
 
 document.getElementById("app").innerHTML = `
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
 <h1>Typography</h1>
 <hr>
 <p>paragraph</p>
@@ -18,5 +19,5 @@ document.getElementById("app").innerHTML = `
   <p>Pentana Solutions provides a number of different Dealer Management Systems (DMS) to Australian and New Zealand retail dealerships.</p>
   <footer>Pentana Solutions</footer>
 </blockquote>
-<p>The following HTML elements: <code class="w3-codespan">span</code>, <code class="w3-codespan">section</code>, and <code class="w3-codespan">div</code> defines a section in a document.</p>
+<br>
 `;
