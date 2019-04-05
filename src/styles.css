@@ -8,7 +8,7 @@
   --brand-color-secondary-S: 87%;
   --brand-color-secondary-L: 53%;
   /* Brand typography */
-  --brand-typography: "Roboto", sans-serif;
+  --brand-typography: "Roboto", Helvetica, Arial, sans-serif;
   --brand-typography-numeric: "Lucida Console", Monaco, monospace;
   /* Breaking down brand colors into their Hue, Saturation, Lightness (HSL) parts */
   --brand-primary-color: hsl(
